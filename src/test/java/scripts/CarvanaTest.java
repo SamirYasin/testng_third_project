@@ -54,6 +54,7 @@ public class CarvanaTest extends CarvanaBase {
     carvanaSearchPage.searchCarsButton.click();
     carvanaSearchPage.searchBox.sendKeys("mercedes-benz");
     carvanaSearchPage.goButton.click();
+    Waiter.pause(10);
     Assert.assertTrue(driver.getCurrentUrl().contains("mercedes-benz"));
         for (int i = 0; i < 20; i++) {
             Assert.assertTrue(carvanaSearchPage.carImages.get(i).isDisplayed());
@@ -69,8 +70,6 @@ public class CarvanaTest extends CarvanaBase {
             Assert.assertNotNull(carvanaSearchPage.monthlyPayment.get(i));
             Assert.assertTrue(carvanaSearchPage.deliveryChip.get(i).isDisplayed());
             Assert.assertNotNull(carvanaSearchPage.deliveryChip.get(i));
-
-
     }
     }
 

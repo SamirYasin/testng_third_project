@@ -3,8 +3,6 @@
     <test name="All Functionalities">
         <classes>
             <class name="scripts.CarvanaTest"/>
-
-            </class>
         </classes>
     </test>
 </suite>
